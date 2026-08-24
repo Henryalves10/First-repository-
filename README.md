@@ -1,3 +1,23 @@
+# Area Calculator
+
+This is the beginning of my journey on GitHub! For this first project, I built a simple Python command-line calculator that computes the area of squares, rectangles, triangles, and circles.
+
+## Features
+- Calculate the area of a **Square**, **Rectangle**, **Triangle**, or **Circle**
+- Interactive menu that loops until the user chooses to quit
+- Input validation for invalid menu choices
+
+## Shapes supported
+| Shape     | Formula              |
+|-----------|-----------------------|
+| Square    | side × side           |
+| Rectangle | base × height          |
+| Triangle  | (base × height) / 2   |
+| Circle    | π × radius²            |
+
+## Code
+
+```python
 import time
 import os
 
@@ -24,8 +44,10 @@ while True:
         print(f'Area = {pi * (Radius * Radius)}')
     elif Answer == 5:
         print('Até logo!')
+        break
     else:
         print('Invalid number, try again ')
 
     time.sleep(2)
-    os.system('cls' if os.name == 'nt' else 'clear') 
+    os.system('cls' if os.name == 'nt' else 'clear')
+```
