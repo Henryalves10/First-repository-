@@ -43,11 +43,11 @@ while True:
         Radius = float(input('Radius: '))
         print(f'Area = {pi * (Radius * Radius)}')
     elif Answer == 5:
-        print('Até logo!')
+        print('See you later!')
         break
     else:
         print('Invalid number, try again ')
 
-    time.sleep(2)
+    time.sleep(3)
     os.system('cls' if os.name == 'nt' else 'clear')
 ```
